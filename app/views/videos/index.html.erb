@@ -2,7 +2,7 @@
 
 <ul>
   <% @videos.each do |video| %>
-    <li><iframe src="//player.vimeo.com/video/<%= video.id %>?portrait=0&color=333" width="WIDTH" height="HEIGHT" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <li><iframe src="//player.vimeo.com/video/<%= video.vimeo_id %>?portrait=0&color=333" width="WIDTH" height="HEIGHT" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     <%= video.name %></li>  
   <% end %>
 </ul>

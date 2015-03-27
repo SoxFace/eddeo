@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20150327013941) do
     t.string   "name"
     t.integer  "user_id"
     t.integer  "category_id"
+    t.integer  "vimeo_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
