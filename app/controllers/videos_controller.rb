@@ -1,6 +1,6 @@
 class VideosController < ApplicationController
 
-  validates :vimeo_id, uniqueness: true
+  # validates :vimeo_id, uniqueness: true
 
   # TO PARSE VIMEO API DATA
   include HTTParty
