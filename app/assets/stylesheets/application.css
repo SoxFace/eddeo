@@ -13,6 +13,7 @@
  *= require base
  *= require layout
  *= require skeleton
+ *= require sweet-alert
  *= require_tree .
  *= require_self
  */
