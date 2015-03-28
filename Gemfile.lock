@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/greinacker/fancybox-rails.git
+  revision: 97f726cc94dd53be9837a54c1de1dbb6f397e0fd
+  branch: rails4
+  specs:
+    fancybox-rails (0.2.1)
+      railties (>= 3.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -211,8 +219,6 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
-    turbolinks (2.5.3)
-      coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
@@ -239,6 +245,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.1.0)
   devise
+  fancybox-rails!
   httparty
   jbuilder (~> 2.0)
   jquery-rails
@@ -257,6 +264,5 @@ DEPENDENCIES
   skeleton-rails
   spring
   sweetalert-rails
-  turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

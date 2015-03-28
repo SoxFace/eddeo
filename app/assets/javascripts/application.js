@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require sweet-alert
+//= require fancybox
 //= require_tree ../../../vendor/assets/javascripts/.
 //= require turbolinks
 //= require_tree .
