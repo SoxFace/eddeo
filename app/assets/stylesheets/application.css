@@ -14,6 +14,7 @@
  *= require layout
  *= require skeleton
  *= require sweet-alert
+ *= require fancybox
  *= require_tree .
  *= require_self
  */

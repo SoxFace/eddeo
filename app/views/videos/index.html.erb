@@ -10,3 +10,16 @@
       </li> 
     <% end %>
   </ul>
+
+  <div class="fancybox"></div>
+  
+  <a class="fancybox fancybox.iframe" href="http://player.vimeo.com/video/63534746">Vimeo</a></li>
+
+  <script>
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+          'href' : $('.fancybox').attr('ul'),
+          type: "iframe"
+      });
+    });
+  </script>
