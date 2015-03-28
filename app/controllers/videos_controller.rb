@@ -31,17 +31,8 @@ class VideosController < ApplicationController
   end
 
   def index
-    @videos = []
-    video_name = 
-    [{:name=>"Fingers Positioning: DP"}, {:name=>"Fingers Positioning: Lateral"}, {:name=>"Fingers Positioning: Oblique"}, {:name=>"Thumb Positioning: Lateral"}, {:name=>"Thumb Positioning: Oblique"}, {:name=>"Thumb Positioning: DP"}, {:name=>"Hand Positioning: DP"}, {:name=>"Hand Positioning: Oblique"}, {:name=>"Hand Positioning: Lateral (Fan)"}, {:name=>"Hand Positioning: Lateral "}, {:name=>"Both Hands Positioning: AP "}, {:name=>"Both Hands Positioning: DP"}, {:name=>"Wrist Positioning: DP"}, {:name=>"Wrist Positioning: Oblique"}, {:name=>"Wrist Positioning: Lateral"}, {:name=>"Scaphoid Series: DP (Ulnar Deviation)"}, {:name=>"Scaphoid Series: DP (Oblique)"}, {:name=>"Scaphoid Series: Lateral"}, {:name=>"Scaphoid Series: Axial"}, {:name=>"Forearm Positioning: AP"}, {:name=>"Forearm Positioning: Lateral"}, {:name=>"Elbow Positioning: AP"}, {:name=>"Elbow Positioning: Lateral"}, {:name=>"Elbow Positioning: Oblique"}]
-
-    # GO THROUGH TITLES AND DISPLAY VIDEO
-    video_name.each do |current|
-      video = Video.find_by( :name => current[:name] )
-      @videos.push( video ) if video
-    end
   end
-
+  
   private
   def iterate( jsonData )
     # Loop through all the data and save to the database
