@@ -6,6 +6,9 @@ class CreateVideos < ActiveRecord::Migration
       t.integer :user_id
       t.integer :category_id
       t.integer :vimeo_id
+      t.string :pictures
+      t.integer :stats
+
 
       t.timestamps null: false
     end

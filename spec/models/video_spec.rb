@@ -7,6 +7,9 @@
 #  name        :string
 #  user_id     :integer
 #  category_id :integer
+#  vimeo_id    :integer
+#  pictures    :string
+#  stats       :integer
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
