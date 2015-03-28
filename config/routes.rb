@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   # GET REQUEST TO VIMEO API
   get '/populate' => "videos#populate"
+
+  get '/populate_video_database' => 'videos#request_vimeo_data'
 end

@@ -4,6 +4,26 @@ class VideosController < ApplicationController
   include HTTParty
   base_uri 'https://api.vimeo.com'
 
+
+  def request_vimeo_data
+    @current_page = @current_page || 1
+    puts "\n\n Current Page: #{@current_page} \n\n"
+
+    options = { headers: { 'Authorization' => "bearer 53571d3c0442ff00db4564d5435b7ea7" }, page: @current_page }
+    json = JSON.parse self.class.get("/me/videos?page=#{@current_page}", options)
+    vimeo_data = json['data']
+
+    if vimeo_data || vimeo_data.length >= 1
+      iterate( vimeo_data )
+    end
+
+
+    # Video.where( :name => "" )
+
+    render :json => Video.all
+    # Make request to page using @current_page
+  end
+
   def populate
     options = { headers: { 'Authorization' => "bearer 53571d3c0442ff00db4564d5435b7ea7" } }
     json = JSON.parse self.class.get("/me/videos", options)
@@ -17,6 +37,26 @@ class VideosController < ApplicationController
 
   def index
     @videos = Video.all
+  end
+
+  private
+  def iterate( jsonData )
+    # Loop through all the data and save to the database
+    # Once that is completed, add one to current_page and call request again
+    jsonData.each do |current|
+      # binding.pry
+      begin
+        uri = current["uri"]
+        vimeo_id = current["uri"].match( /\d+/ ).to_s
+        name = current["name"]
+        Video.find_or_create_by( :uri => uri, :name => name, :vimeo_id => vimeo_id )
+      rescue 
+        binding.pry
+      end
+    end
+
+    @current_page += 1
+    request_vimeo_data
   end
 
 end
