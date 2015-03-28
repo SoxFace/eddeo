@@ -1,11 +1,11 @@
-<h1>Name of Video</h1>
+<h1>Name of Video<%= @video.try :name %></h1>
 
 <!-- .container is main centered wrapper -->
 <div class="container">
 
   <!-- columns should be the immediate child of a .row -->
   <div class="row">
-    <div class="eight columns">Category of Video</div>
+    <div class="eight columns">Medical Radiation Sciences</div>
     <div class="two columns"># of Views</div>
     <div class="two columns"># of Comments</div>
     <hr>
@@ -36,7 +36,7 @@
     </div>
 
     <div class="six columns">Video
-      <iframe src="https://player.vimeo.com/video/120344655" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/120344655">MOMENTUM / Octav Rolan</a> from <a href="https://vimeo.com/user26457404">AL CHARRIERE</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+      <iframe src="//player.vimeo.com/video/<%= @video.try :vimeo_id %>?portrait=0&color=333" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
       <div id="disqus_thread"></div>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

@@ -8,7 +8,7 @@ class VideosController < ApplicationController
     # Make request to page using @current_page
     @current_page = @current_page || 1
     puts "\n\n Current Page: #{@current_page} \n\n"
-    options = { headers: { 'Authorization' => "bearer 53571d3c0442ff00db4564d5435b7ea7" }, page: @current_page }
+    options = { headers: { 'Authorization' => "bearer 53571d3c0442ff00db4564d5435b7ea7" }, page: @current_page,  }
     json = JSON.parse self.class.get("/me/videos?page=#{@current_page}", options)
     vimeo_data = json['data']
 
