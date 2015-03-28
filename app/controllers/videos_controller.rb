@@ -4,11 +4,10 @@ class VideosController < ApplicationController
   include HTTParty
   base_uri 'https://api.vimeo.com'
 
-
   def request_vimeo_data
+    # Make request to page using @current_page
     @current_page = @current_page || 1
     puts "\n\n Current Page: #{@current_page} \n\n"
-
     options = { headers: { 'Authorization' => "bearer 53571d3c0442ff00db4564d5435b7ea7" }, page: @current_page }
     json = JSON.parse self.class.get("/me/videos?page=#{@current_page}", options)
     vimeo_data = json['data']
@@ -17,11 +16,7 @@ class VideosController < ApplicationController
       iterate( vimeo_data )
     end
 
-
-    # Video.where( :name => "" )
-
     render :json => Video.all
-    # Make request to page using @current_page
   end
 
   def populate
@@ -36,7 +31,15 @@ class VideosController < ApplicationController
   end
 
   def index
-    @videos = Video.all
+    @videos = []
+    video_name = 
+    [{:name=>"Fingers Positioning: DP"}, {:name=>"Fingers Positioning: Lateral"}, {:name=>"Fingers Positioning: Oblique"}, {:name=>"Thumb Positioning: Lateral"}, {:name=>"Thumb Positioning: Oblique"}, {:name=>"Thumb Positioning: DP"}, {:name=>"Hand Positioning: DP"}, {:name=>"Hand Positioning: Oblique"}, {:name=>"Hand Positioning: Lateral (Fan)"}, {:name=>"Hand Positioning: Lateral "}, {:name=>"Both Hands Positioning: AP "}, {:name=>"Both Hands Positioning: DP"}, {:name=>"Wrist Positioning: DP"}, {:name=>"Wrist Positioning: Oblique"}, {:name=>"Wrist Positioning: Lateral"}, {:name=>"Scaphoid Series: DP (Ulnar Deviation)"}, {:name=>"Scaphoid Series: DP (Oblique)"}, {:name=>"Scaphoid Series: Lateral"}, {:name=>"Scaphoid Series: Axial"}, {:name=>"Forearm Positioning: AP"}, {:name=>"Forearm Positioning: Lateral"}, {:name=>"Elbow Positioning: AP"}, {:name=>"Elbow Positioning: Lateral"}, {:name=>"Elbow Positioning: Oblique"}]
+
+    # GO THROUGH TITLES AND DISPLAY VIDEO
+    video_name.each do |current|
+      video = Video.find_by( :name => current[:name] )
+      @videos.push( video ) if video
+    end
   end
 
   private

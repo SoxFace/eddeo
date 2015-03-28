@@ -1,8 +1,29 @@
 <h1>This is the Video Landing Page</h1>
 
+<h3>Upper Limb Positioning</h3>
 <ul>
   <% @videos.each do |video| %>
-    <li><iframe src="//player.vimeo.com/video/<%= video.vimeo_id %>?portrait=0&color=333" width="WIDTH" height="HEIGHT" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <%= video.name %></li>  
+    <li><iframe src="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" width="WIDTH" height="HEIGHT" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <%= video.try :name %></li>  
   <% end %>
 </ul>
+
+<h3>Lower Limb Positioning</h3>
+
+<h3>Chest Positioning</h3>
+
+<h3>Shoulder Positioning</h3>
+
+<h3>Hip Positioning</h3>
+
+<h3>Abdomen Positioning</h3>
+
+<h3>Cervical Spine Positioning</h3>
+
+<h3>Thoracic Spine Positioning</h3>
+
+<h3>Lumbar Spine Positioning</h3>
+
+<h3>SI Joint Positioning</h3>
+
+<h3>Additional Positioning</h3>
