@@ -1,6 +1,4 @@
-<h1>This is the Video Landing Page</h1>
-
-<div class="row">
+<!-- <div class="row">
   <div class="twelve columns">
     <nav>
       <a class="button" href="#">Upper Limb</a>
@@ -11,13 +9,13 @@
       <a class="button" href="#">Spinal</a>
     </nav>
     </div>
-  </div>
+  </div> -->
 
   <h3>Upper Limb Positioning Images</h3>
   <div class="playlistItem">
       <% upper_limb %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSET NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
@@ -28,7 +26,7 @@
   <div class="playlistItem">
       <% lower_limb %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSET NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
@@ -39,7 +37,7 @@
   <div class="playlistItem">
       <% chest %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSET NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
@@ -50,7 +48,7 @@
   <div class="playlistItem">
       <% shoulder %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSET NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
@@ -61,7 +59,7 @@
   <div class="playlistItem">
       <% pelvis %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSET NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
@@ -72,7 +70,7 @@
   <div class="playlistItem">
       <% spinal %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSET NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
