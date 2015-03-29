@@ -15,6 +15,12 @@
   .fancybox-skin {
     background-color: black;
   }
+
+  .fancybox-title .child{
+    padding-top: 2em;
+    font-size: 2em;
+    background-color: transparent;
+  }
   </style>
 
   <script>
@@ -25,7 +31,7 @@
           transitionIn: 'fade',
           transitionOut: 'fade',
           beforeShow: function () {
-                  this.title = (this.title ? this.title : '') + " <button>View Full Lesson</button>";
+                  this.title = (this.title) + " <button>View Full Lesson</button>";
               }
       });
     });
