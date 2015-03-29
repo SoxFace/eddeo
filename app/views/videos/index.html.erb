@@ -5,7 +5,7 @@
     <% upper_limb %>
     <% @videos.each do |video| %>
       <li>
-        <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt=""></a>
+        <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
         <%= video.try :name %>
       </li> 
     <% end %>
@@ -14,8 +14,10 @@
   <script>
     $(document).ready(function() {
       $(".fancybox").fancybox({
-          'href' : $('.fancybox').attr('ul'),
-          type: "iframe"
+          type: "iframe",
+          titlePosition: "inside"
       });
     });
+
+
   </script>
