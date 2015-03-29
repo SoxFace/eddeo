@@ -65,6 +65,15 @@ footer {
   box-sizing: border-box;
 }
 
+.child .view_lesson {
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 .thumb {
   border-radius: 20px;
 }
