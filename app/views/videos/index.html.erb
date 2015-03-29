@@ -1,17 +1,32 @@
 <h1>This is the Video Landing Page</h1>
 
-  <h3>Upper Limb Positioning</h3>
+  <h3>Upper Limb Positioning Vimeo</h3>
   <ul>
     <% upper_limb %>
     <% @videos.each do |video| %>
       <li>
-        <iframe src="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" width="WIDTH" height="HEIGHT" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><img src="https://i.vimeocdn.com/video/217552556_200x150.jpg" alt="">
+        <iframe src="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" width="WIDTH" height="HEIGHT" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="">
         <%= video.try :name %>
       </li> 
     <% end %>
   </ul>
 
+  <h3>Upper Limb Positioning Images</h3>
+  <ul>
+    <% upper_limb %>
+    <% @videos.each do |video| %>
+      <li>
+        <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt=""></a>
+        <%= video.try :name %>
+      </li> 
+    <% end %>
+  </ul>
+
+
   <div class="fancybox"></div>
+<!--   <a href="myfile.htm"><img src="rainbow.gif"></a> 
+ -->
+  <li><a class="fancybox fancybox.iframe" href="http://player.vimeo.com/video/63534746"><img src="https://i.vimeocdn.com/video/217554055_200x150.jpg" alt=""></a></li>
   
   <a class="fancybox fancybox.iframe" href="http://player.vimeo.com/video/63534746">Vimeo</a></li>
 
