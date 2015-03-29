@@ -45,8 +45,10 @@ class VideosController < ApplicationController
         uri = current["uri"]
         vimeo_id = current["uri"].match( /\d+/ ).to_s
         name = current["name"]
-        pictures = current["pictures"]["uri"]
+        pictures_url = current["pictures"]["uri"].match /(\d+)\D+(\d+)/
+        pictures = pictures_url[2].to_s
         stats = current["stats"]["plays"]
+
         Video.find_or_create_by( :uri => uri, :name => name, :vimeo_id => vimeo_id, :pictures => pictures, :stats => stats )
       rescue 
         binding.pry

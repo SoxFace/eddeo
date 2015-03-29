@@ -5,9 +5,8 @@
 
   <!-- columns should be the immediate child of a .row -->
   <div class="row">
-    <div class="eight columns">Medical Radiation Sciences</div>
-    <div class="two columns"># of Views</div>
-    <div class="two columns"># of Comments</div>
+    <div class="ten columns">Medical Radiation Sciences</div>
+    <div class="two columns"># of Plays <%= @video.try :stats %></div>
     <hr>
   </div>
 

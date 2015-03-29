@@ -5,7 +5,7 @@
     <% upper_limb %>
     <% @videos.each do |video| %>
       <li>
-        <iframe src="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" width="WIDTH" height="HEIGHT" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe src="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" width="WIDTH" height="HEIGHT" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><img src="https://i.vimeocdn.com/video/217552556_200x150.jpg" alt="">
         <%= video.try :name %>
       </li> 
     <% end %>
