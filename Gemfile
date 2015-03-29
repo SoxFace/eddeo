@@ -45,6 +45,8 @@ gem 'devise'
 gem 'sweetalert-rails'
 # jQuery Fancybox https://rubygems.org/gems/fancybox2-rails
 gem 'fancybox-rails', :github => 'greinacker/fancybox-rails', :branch => 'rails4'
+# https://github.com/marjinal1st/medium-editor-rails
+gem 'medium-editor-rails'
 
 group :development do
  gem 'pry-rails'
