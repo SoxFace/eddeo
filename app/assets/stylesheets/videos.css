@@ -1,3 +1,13 @@
+# Fancybox Custom Styling
+.fancybox-skin {
+  background-color: black;
+}
+
+.fancybox-title .child{
+  font-size: 2em;
+  background-color: transparent;
+}
+
 p {
   border-right: .1rem dotted gray;
 }

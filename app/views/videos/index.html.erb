@@ -11,11 +11,22 @@
     <% end %>
   </ul>
 
+  <style>
+  .fancybox-skin {
+    background-color: black;
+  }
+  </style>
+
   <script>
     $(document).ready(function() {
       $(".fancybox").fancybox({
           type: "iframe",
-          titlePosition: "inside"
+          titlePosition: "inside",
+          transitionIn: 'fade',
+          transitionOut: 'fade',
+          beforeShow: function () {
+                  this.title = (this.title ? this.title : '') + " <button>View Full Lesson</button>";
+              }
       });
     });
 
