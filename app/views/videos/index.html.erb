@@ -1,15 +1,15 @@
 <h1>This is the Video Landing Page</h1>
 
   <h3>Upper Limb Positioning Images</h3>
-  <ul>
-    <% upper_limb %>
-    <% @videos.each do |video| %>
-      <li>
-        <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
-        <%= video.try :name %>
-      </li> 
-    <% end %>
-  </ul>
+  <div class="playlistitem">
+      <% upper_limb %>
+      <% @videos.each do |video| %>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <!-- FIGURE OUT HOW TO INSET NAME WITHOUT DISTRUPTING FLOW
+          <div class="video_name"><%#= video.try :name %></div> 
+          -->
+      <% end %>
+  </div>
 
   <style>
   .fancybox-skin {

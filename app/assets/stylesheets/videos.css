@@ -8,6 +8,20 @@
   background-color: transparent;
 }
 
-p {
-  border-right: .1rem dotted gray;
+.playlistItem {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 169px;
+  background: #111;
+  float: left;
+  overflow: hidden;
 }
+/*
+.playlistItem .video_name {
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+}*/
