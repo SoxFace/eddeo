@@ -1,7 +1,20 @@
 <h1>This is the Video Landing Page</h1>
 
+<div class="row">
+  <div class="twelve columns">
+    <nav>
+      <a class="button" href="#">Upper Limb</a>
+      <a class="button" href="#">Lower Limb</a>
+      <a class="button" href="#">Chest</a>
+      <a class="button" href="#">Shoulder</a>
+      <a class="button" href="#">Pelvis</a>
+      <a class="button" href="#">Spinal</a>
+    </nav>
+    </div>
+  </div>
+
   <h3>Upper Limb Positioning Images</h3>
-  <div class="playlistitem">
+  <div class="playlistItem">
       <% upper_limb %>
       <% @videos.each do |video| %>
           <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
@@ -12,7 +25,7 @@
   </div>
 
   <h3>Lower Limb Positioning Images</h3>
-  <div class="playlistitem">
+  <div class="playlistItem">
       <% lower_limb %>
       <% @videos.each do |video| %>
           <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
@@ -23,7 +36,7 @@
   </div>
 
   <h3>Chest Positioning Images</h3>
-  <div class="playlistitem">
+  <div class="playlistItem">
       <% chest %>
       <% @videos.each do |video| %>
           <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
@@ -34,7 +47,7 @@
   </div>
 
   <h3>Shoulder Positioning Images</h3>
-  <div class="playlistitem">
+  <div class="playlistItem">
       <% shoulder %>
       <% @videos.each do |video| %>
           <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
@@ -45,7 +58,7 @@
   </div>
 
   <h3>Pelvis Positioning Images</h3>
-  <div class="playlistitem">
+  <div class="playlistItem">
       <% pelvis %>
       <% @videos.each do |video| %>
           <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
@@ -56,7 +69,7 @@
   </div>
 
   <h3>Spinal Positioning Images</h3>
-  <div class="playlistitem">
+  <div class="playlistItem">
       <% spinal %>
       <% @videos.each do |video| %>
           <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
