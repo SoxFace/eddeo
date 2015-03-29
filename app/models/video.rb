@@ -19,4 +19,9 @@ class Video < ActiveRecord::Base
   has_and_belongs_to_many :categories
 
   validates :vimeo_id, uniqueness: true
+
+  def self.search(query)
+    where("video ilike ?", "%#{query}%") 
+  end
+
 end

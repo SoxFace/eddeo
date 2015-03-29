@@ -13,25 +13,20 @@
   <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
 <body>
-
-  <div class="row">
-    <div class="three columns">
       <a class="button" href="/">Video Index</a>
       <a class="button" href="/featured">Featured Video</a>
       <a class="button" href="/admin">Admin</a>
-    </div>
-    <div class="eight columns">
-      <p class="navbar-text pull-right">
-      <% if user_signed_in? %>
-        Logged in as <strong><%= current_user.email %></strong>.
-        <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-      <% else %>
-        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-        <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-      <% end %>
-    </div>
-  </div>
+    
+      <%#= render :partial => 'search' %>
+      <div id="devise_header">
+        <% if user_signed_in? %>
+          <strong><%= current_user.email %></strong>.
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+        <% else %>
+          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+        <% end %>
+      </div>
 
   <div id="container">
 
@@ -52,6 +47,10 @@
   </div>
 </div>
 
+<footer>
+  <hr>
+  Faculty of Health Sciences<br>University of Sydney<br>&copy; 2015
+</footer>
 
 </body>
 </html>

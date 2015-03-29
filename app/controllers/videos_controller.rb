@@ -33,6 +33,11 @@ class VideosController < ApplicationController
   end
 
   def index
+    if params[:search]
+      @videos = Video.search(params[:search]).order("name ASC")
+    else
+      @videos = Video.all.order('name ASC')
+    end
   end
   
   private
