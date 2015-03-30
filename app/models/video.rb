@@ -17,12 +17,16 @@
 class Video < ActiveRecord::Base
   has_and_belongs_to_many :users
   has_and_belongs_to_many :categories
-  has_and_belongs_to_many :views
+  has_many :views
 
   validates :vimeo_id, uniqueness: true
 
   def self.search(query)
     where("video ilike ?", "%#{query}%") 
+  end
+
+  def viewer_ids
+    self.views.map(&:user_id)
   end
 
 end

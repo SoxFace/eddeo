@@ -1,21 +1,11 @@
-<!-- <div class="row">
-  <div class="twelve columns">
-    <nav>
-      <a class="button" href="#">Upper Limb</a>
-      <a class="button" href="#">Lower Limb</a>
-      <a class="button" href="#">Chest</a>
-      <a class="button" href="#">Shoulder</a>
-      <a class="button" href="#">Pelvis</a>
-      <a class="button" href="#">Spinal</a>
-    </nav>
-    </div>
-  </div> -->
+
 
   <h3>Upper Limb Positioning Images</h3>
   <div class="playlistItem">
       <% upper_limb %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSERT NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
@@ -114,36 +104,16 @@
         });
       }
 
-      $(".thumb").click(function() {  //use a class, since your ID gets mangled
-          $(this).addClass("active");      //add the class to the clicked element
+      // When we click on the image
+      // Set a timer and wait 5 seconds
+      // If it hits 5 seconds, send an ajax request to views/create with user_id and video_id
+      $(".thumb").click(function() {
+          $(this).addClass("active");
           var video_id = $(this).parent().data("id");
           var createNewViewTimer = setTimeout(function () {
             createNewView(video_id)
-          }, 1000)
-
-
-
-
-
+          }, 5000)
       });
-
-
-      // When we click on the image
-        // Set a timer and wait 5 seconds
-        // If it hits 3 seconds, send an ajax request to views/create with user_id and video_id
-
-      // We need to store the video id and
-
-
-
-
-
-
-
-
-
-
-
 
     });
 
