@@ -4,6 +4,10 @@ class VideosController < ApplicationController
   include HTTParty
   base_uri 'https://api.vimeo.com'
 
+  def featured
+    @video = Video.find params[:id]
+  end
+
   def request_vimeo_data
     # Make request to page using @current_page
     @current_page = @current_page || 1

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   root :to => "videos#index"
 
-  get "featured", to: "videos#featured", as: "featured"
+  get "featured/:id", to: "videos#featured", as: "featured"
 
   # GET REQUEST TO VIMEO API
   get '/populate' => "videos#populate"
