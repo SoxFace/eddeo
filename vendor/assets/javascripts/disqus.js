@@ -1,5 +1,8 @@
   /* * * CONFIGURATION VARIABLES * * */
   var disqus_shortname = 'soxyface';
+  // Unique identifier for each video thread
+  // var disqus_identifier = '<%= article.id %>';
+  // var disqus_url = '<%= url_for(article, :only_path => false) %>';
   
   /* * * DON'T EDIT BELOW THIS LINE * * */
   (function() {
