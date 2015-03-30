@@ -1,28 +1,19 @@
-<h1>Name of Video<%= @video.try :name %></h1>
+<h2><%= @video.try :name %> with <strong><%= @video.try :stats %> plays</strong></h2>
+<hr>
 
 <!-- .container is main centered wrapper -->
 <div class="container">
 
-  <!-- columns should be the immediate child of a .row -->
-  <div class="row">
-    <div class="ten columns">Medical Radiation Sciences</div>
-    <div class="two columns"># of Plays <%= @video.try :stats %></div>
-    <hr>
-  </div>
-
   <div class="row">
     <div class="eight columns">
-    <h4>Additional Information</h4>
-    <div class="top-bar">
-            Theme:
-            <select id="sel-themes">
-                <option value="themes/bootstrap" selected>bootstrap</option>
-                <option value="themes/roman" selected>roman</option>
-            </select>
-        </div>
+    <h4>QuickNote</h4>
+      <div class="top-bar">
+      </div>
         <div id="container">
             <div class="editable">
-                <p>As an admin you can edit this section directly, all thanks to <a href="http://daviferreira.github.io/medium-editor/"></a></p>
+                <h5>You can type up your notes here while you watch the video.</h5>
+                <br>
+                <h5>Be sure to copy and save them across once you're finished!!!</h5>
             </div>
         </div>
       </div>
@@ -42,8 +33,8 @@
       
       </script>
 
-    <div class="six columns">Video
-      <iframe src="//player.vimeo.com/video/<%= @video.try :vimeo_id %>?portrait=0&color=333" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="six columns"><%= @video.try :name %>
+      <iframe src="//player.vimeo.com/video/<%= @video.try :vimeo_id %>?portrait=0&color=333" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><a class="button" href="/">BACK TO VIDEOS</a>
 
       <div id="disqus_thread"></div>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

@@ -2,9 +2,8 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-#devise_header {
+.devise_header {
   position: fixed;
-  width: 100px;
   top: 20px;
   right: 30px;
   text-align: right;
@@ -92,4 +91,10 @@ footer {
 
 .active {
   -webkit-filter: grayscale(100%);
+}
+
+.editable {
+  border: 1px dotted lightgray;
+  border-radius: 10px;
+  padding: 10px;
 }
