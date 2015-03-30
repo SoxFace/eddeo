@@ -9,4 +9,5 @@ $(document).ready(function() {
 
   $('.editable').on('input', function() {
     // Do some work
-  });  });
+  });  
+});
