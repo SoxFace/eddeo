@@ -3,7 +3,7 @@ body {
 }
 
 .devise_header {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 30px;
   text-align: right;
@@ -94,7 +94,7 @@ footer {
 }
 
 .editable {
-  border: 1px dotted lightgray;
+  border: 1px dotted line-height: ;gray;
   border-radius: 10px;
   padding: 10px;
 }
