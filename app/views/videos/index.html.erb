@@ -26,7 +26,7 @@
   <div class="playlistItem">
       <% lower_limb %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSERT NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
@@ -38,7 +38,7 @@
 
       <% chest %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSERT NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
@@ -49,7 +49,7 @@
   <div class="playlistItem">
       <% shoulder %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSERT NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
@@ -60,7 +60,7 @@
   <div class="playlistItem">
       <% pelvis %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSERT NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
@@ -71,7 +71,7 @@
   <div class="playlistItem">
       <% spinal %>
       <% @videos.each do |video| %>
-          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+          <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
           <!-- FIGURE OUT HOW TO INSERT NAME WITHOUT DISTRUPTING FLOW
           <div class="video_name"><%#= video.try :name %></div> 
           -->
