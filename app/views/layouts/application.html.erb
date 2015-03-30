@@ -14,16 +14,12 @@
 
 <body>
 
-<header>
+  <header>
   Medical Radiation Sciences | Postioning Videos
-</header>
+  </header>
 
-      <a class="button" href="/">Video Index</a>
-      <a class="button" href="/featured">Featured Video</a>
-      <a class="button" href="/admin">Admin</a>
-    
-      <%#= render :partial => 'search' %>
       <div class="devise_header">
+        Nice work, you have watched <strong><%= current_user.views.count %> of 113</strong> videos available.<br>
         <% if user_signed_in? %>
           <%= current_user.email %>
           <strong><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></strong>
@@ -39,18 +35,7 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <div class="section hero">
-      <div class="container">
-        <div class="row">
-          <div class="one-half column">
-
           <%= yield %>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <footer>
   <hr>
