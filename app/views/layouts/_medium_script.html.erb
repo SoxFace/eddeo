@@ -1,0 +1,16 @@
+<div class="editable">
+  <h5>You can type up your notes here while you watch the video.</h5>
+  <br>
+  <h5>Remember to copy and save once you're finished watching!!!</h5>
+</div>
+
+<script>
+$(document).ready(function() {
+  var editor = new MediumEditor('.editable', {
+            buttonLabels: 'fontawesome'
+        })
+  $('.editable').on('input', function() {
+    // Do some work
+  });  
+});
+</script>
