@@ -89,3 +89,7 @@ footer {
 .thumb:hover {
   -webkit-filter: grayscale(100%);
 }
+
+.active {
+  -webkit-filter: grayscale(100%);
+}
