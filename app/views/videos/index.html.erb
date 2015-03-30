@@ -1,101 +1,61 @@
 <div class="container">
-<div class="row">
-  <div class="one-half column">
+    <div class="row">
+        <div class="one-half column">
 
-    <h3>Upper Limb Positioning Images</h3>
-    <div class="playlistItem">
-        <% upper_limb %>
-        <% @videos.each do |video| %>
-            <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
-            <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
-        <% end %>
+            <h3>Upper Limb Positioning Images</h3>
+            <div class="playlistItem">
+                <% upper_limb %>
+                <% @videos.each do |video| %>
+                <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
+                <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+                <% end %>
+            </div>
+
+            <h3>Lower Limb Positioning Images</h3>
+            <div class="playlistItem">
+                <% lower_limb %>
+                <% @videos.each do |video| %>
+                <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
+                <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+                <% end %>
+            </div>
+
+            <h3>Chest Positioning Images</h3>
+            <div class="playlistItem">
+                <% chest %>
+                <% @videos.each do |video| %>
+                <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
+                <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+                <% end %>
+            </div>
+
+            <h3>Shoulder Positioning Images</h3>
+            <div class="playlistItem">
+                <% shoulder %>
+                <% @videos.each do |video| %>
+                <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
+                <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+                <% end %>
+            </div>
+
+            <h3>Pelvis Positioning Images</h3>
+                <div class="playlistItem">
+                <% pelvis %>
+                <% @videos.each do |video| %>
+                <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
+                <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+                <% end %>
+            </div>
+
+            <h3>Spinal Positioning Images</h3>
+                <div class="playlistItem">
+                <% spinal %>
+                <% @videos.each do |video| %>
+                <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
+                <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
+                <% end %>
+            </div>
+
+        </div>
     </div>
-
-    <h3>Lower Limb Positioning Images</h3>
-    <div class="playlistItem">
-        <% lower_limb %>
-        <% @videos.each do |video| %>
-            <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
-            <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
-        <% end %>
-    </div>
-
-    <h3>Chest Positioning Images</h3>
-    <div class="playlistItem">
-
-        <% chest %>
-        <% @videos.each do |video| %>
-            <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
-            <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
-        <% end %>
-    </div>
-
-    <h3>Shoulder Positioning Images</h3>
-    <div class="playlistItem">
-        <% shoulder %>
-        <% @videos.each do |video| %>
-            <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
-            <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
-        <% end %>
-    </div>
-
-    <h3>Pelvis Positioning Images</h3>
-    <div class="playlistItem">
-        <% pelvis %>
-        <% @videos.each do |video| %>
-            <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
-            <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
-        <% end %>
-    </div>
-
-    <h3>Spinal Positioning Images</h3>
-    <div class="playlistItem">
-        <% spinal %>
-        <% @videos.each do |video| %>
-            <% viewed_class = 'active' if video.viewer_ids.include? current_user.id %>
-            <a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/<%= video.try :vimeo_id %>?portrait=0&color=333" title="<%= video.try :name %>" data-id="<%= video.id %>"><img class="thumb <%= viewed_class %>" src="https://i.vimeocdn.com/video/<%= video.try :pictures %>_200x150.jpg" alt="placeholder"></a>
-        <% end %>
-    </div>
-
-    <script>
-      $(document).ready(function() {
-        $(".fancybox").fancybox({
-            type: "iframe",
-            titlePosition: "inside",
-            transitionIn: 'fade',
-            transitionOut: 'fade',
-            beforeShow: function () {
-                    var id = this.element.data('id');
-                    this.title = (this.title) + "<a class ='view_lesson' href='/featured/" + id + "'> Take Notes & Watch</a>";
-                }
-        });
-
-        var createNewView = function (id) {
-
-          $.ajax("/views", { 
-            dataType:'json',
-            data: { video_id: id },
-            method: 'POST',
-            beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))}
-          });
-        }
-
-        // When we click on the image
-        // Set a timer and wait 5 seconds
-        // If it hits 5 seconds, send an ajax request to views/create with user_id and video_id
-        $(".thumb").click(function() {
-            $(this).addClass("active");
-            var video_id = $(this).parent().data("id");
-            var createNewViewTimer = setTimeout(function () {
-              createNewView(video_id)
-            }, 5000)
-        });
-
-      });
-
-    </script>
-
-    </div>
-  </div>
-</div>
 </div>
