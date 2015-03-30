@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-
+  root :to => "videos#landing"
   # Sends ajax post to views model
   post 'views', to: "views#create"
 
   devise_for :admins
   devise_for :users
-  root :to => "videos#landing"
 
   get "/index", to: "videos#index", as: "index"
 
