@@ -79,7 +79,7 @@
 	background-image: url('fancybox_sprite.png');
 }
 
-/*#fancybox-loading {
+#fancybox-loading {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -96,7 +96,7 @@
 	height: 44px;
 	background: url('fancybox_loading.gif') center center no-repeat;
 }
-*/
+
 .fancybox-close {
 	position: absolute;
 	top: -18px;
