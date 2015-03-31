@@ -15,6 +15,5 @@
 //= require sweet-alert
 //= require fancybox
 //= require medium-editor
-//= require_tree ../../../vendor/assets/javascripts/.
 //= require turbolinks
 //= require_tree .
