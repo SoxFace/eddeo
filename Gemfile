@@ -34,7 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # EDDEO SPECIFIC GEMS
 # Enables serving assets in production and setting your logger to standard out
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 # Skeleton CSS framework functionality
 gem 'skeleton-rails'
 # Parse Vimeo API data
