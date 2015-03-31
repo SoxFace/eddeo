@@ -2,25 +2,15 @@ require 'rails_helper'
 
 RSpec.describe ViewsController, type: :controller do
 
-  # describe "GET #index" do
-  #   it "returns http success" do
-  #     get :index
-  #     expect(response).to have_http_status(:success)
-  #   end
-  # end
+  describe "Create View" do
+    before do
+      @view = View.create(:user_id => '1', :video_id => '511')
+    end
 
-  # describe "GET #new" do
-  #   it "returns http success" do
-  #     get :new
-  #     expect(response).to have_http_status(:success)
-  #   end
-  # end
-
-  # describe "GET #create" do
-  #   it "returns http success" do
-  #     get :create
-  #     expect(response).to have_http_status(:success)
-  #   end
-  # end
+    it "should save the id of the video and user to the view model" do
+      expect(@view.user_id).to eq(1)
+      expect(@view.video_id).to eq(511)
+    end
+  end
 
 end
