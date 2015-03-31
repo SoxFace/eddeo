@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => "videos#landing"
+  root :to => "videos#_landing"
   # Sends ajax post to views model
   post 'views', to: "views#create"
 
