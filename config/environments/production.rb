@@ -3,7 +3,7 @@ Rails.application.configure do
 
   # Code is not reloaded between requests.
   config.cache_classes = true
-  
+  config.assets.precompile += %w( *.css *.js )
   config.assets.compile = true
   config.assets.digest = true
   # Eager load code on boot. This eager loads most of Rails and
