@@ -14,7 +14,7 @@
       <img src="./assets/0.9.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-03-31T16:49:15+11:00">2015-03-31T16:49:15+11:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-03-31T16:56:06+11:00">2015-03-31T16:56:06+11:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -353,7 +353,7 @@
       <tr>
         <td class="strong"><a href="#7541c7ce51394d36d2c30bf08d7c79644474e88a" class="src_link" title="spec/controllers/videos_controller_spec.rb">spec/controllers/videos_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>85</td>
+        <td>86</td>
         <td>26</td>
         <td>26</td>
         <td>0</td>
@@ -5873,79 +5873,79 @@
         <li class="covered" data-hits="1" data-linenumber="47">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(@video.uri).to eq &quot;31939661&quot;</code>
+          <code class="ruby">      expect(@video.uri).to eq(&quot;31939661&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="48">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(@video.name).to eq &#39;An Example Video&#39;</code>
+          <code class="ruby">      expect(@video.name).to eq(&#39;An Example Video&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(@video.vimeo_id).to eq 511</code>
+          <code class="ruby">      expect(@video.vimeo_id).to eq(511)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">      should redirect_to(root_path)</code>
+          <code class="ruby">      expect(response.status).to eq(200)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      # expect(response).to redirect_to(root_path)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
           
           
-          <code class="ruby">    # it &#39;should redirect to root path&#39; do</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby">    #   should redirect_to { root_path }</code>
+          <code class="ruby">    # it &#39;should redirect to root path&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby">    #   should redirect_to(action: :index)</code>
+          <code class="ruby">    #   should redirect_to root_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="56">
           
           
-          <code class="ruby">    # end</code>
+          <code class="ruby">    #   should redirect_to(action: :index)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
@@ -5957,13 +5957,13 @@
         <li class="never" data-hits="" data-linenumber="61">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
@@ -5975,130 +5975,136 @@
         <li class="never" data-hits="" data-linenumber="64">
           
           
-          <code class="ruby"># RSpec.describe Fruit, :type =&gt; :model do</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby"></code>
+          <code class="ruby"># RSpec.describe Fruit, :type =&gt; :model do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby">#   it { should belong_to :shelf }</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">#   it { should belong_to :shelf }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="68">
           
           
-          <code class="ruby">#   describe &quot;An apple&quot; do</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="69">
           
           
-          <code class="ruby">#     before do</code>
+          <code class="ruby">#   describe &quot;An apple&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="70">
           
           
-          <code class="ruby">#       @apple = Apple.create(:name =&gt; &#39;Granny Smith&#39;)</code>
+          <code class="ruby">#     before do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="71">
           
           
-          <code class="ruby">#     end</code>
+          <code class="ruby">#       @apple = Apple.create(:name =&gt; &#39;Granny Smith&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">#     end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="73">
           
           
-          <code class="ruby">#     it &#39;should not be squishy&#39; do</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="74">
           
           
-          <code class="ruby">#       expect(@apple.squishy?).to eq(false)</code>
+          <code class="ruby">#     it &#39;should not be squishy&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="75">
           
           
-          <code class="ruby">#     end</code>
+          <code class="ruby">#       expect(@apple.squishy?).to eq(false)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="76">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">#     end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="77">
           
           
-          <code class="ruby">#     it &#39;should remember what class it is using Single Table Inheritance (STI)&#39; do</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="78">
           
           
-          <code class="ruby">#       apple = Fruit.find @apple.id</code>
+          <code class="ruby">#     it &#39;should remember what class it is using Single Table Inheritance (STI)&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="79">
           
           
-          <code class="ruby">#       expect(apple).to_not eq(nil) # Existence/persistence</code>
+          <code class="ruby">#       apple = Fruit.find @apple.id</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
           
           
-          <code class="ruby">#       expect(apple.class).to eq(Apple) # Class via STI</code>
+          <code class="ruby">#       expect(apple).to_not eq(nil) # Existence/persistence</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="81">
           
           
-          <code class="ruby">#       expect(apple).to eq(@apple) # Same object</code>
+          <code class="ruby">#       expect(apple.class).to eq(Apple) # Class via STI</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby">#       expect(apple.is_a? Fruit).to eq(true) # Inheritance</code>
+          <code class="ruby">#       expect(apple).to eq(@apple) # Same object</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="83">
           
           
-          <code class="ruby">#       expect(apple.class.ancestors).to include(Fruit)</code>
+          <code class="ruby">#       expect(apple.is_a? Fruit).to eq(true) # Inheritance</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="84">
           
           
-          <code class="ruby">#     end</code>
+          <code class="ruby">#       expect(apple.class.ancestors).to include(Fruit)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">#     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
           
           
           <code class="ruby">#   end</code>

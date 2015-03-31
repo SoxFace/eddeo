@@ -44,16 +44,11 @@ RSpec.describe VideosController, type: :controller do
     end
 
     it 'should populate the database as json' do
-      expect(@video.uri).to eq "31939661"
-      expect(@video.name).to eq 'An Example Video'
-      expect(@video.vimeo_id).to eq 511
-      should redirect_to(root_path)
+      expect(@video.uri).to eq("31939661")
+      expect(@video.name).to eq('An Example Video')
+      expect(@video.vimeo_id).to eq(511)
+      expect(response.status).to eq(200)
     end
-
-    # it 'should redirect to root path' do
-    #   should redirect_to { root_path }
-    #   should redirect_to(action: :index)
-    # end
 
   end
 
