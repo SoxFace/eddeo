@@ -11,5 +11,12 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe VideosHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  describe "find Videos" do
+    
+    it 'should find videos in the db using exact titles' do
+      expect(upper_limb).to_not be_nil
+    end
+  end
+
 end
