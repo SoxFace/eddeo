@@ -8,11 +8,11 @@ Rails.application.routes.draw do
 
   get "/index", to: "videos#index", as: "index"
 
-  get "featured/:id", to: "videos#featured", as: "featured"
+  get "/featured/:id", to: "videos#featured", as: "featured"
 
   # GET REQUEST TO VIMEO API
-  get '/populate' => "videos#populate"
+  # get '/populate' => "videos#populate"
 
-  get '/populate_video_database' => 'videos#request_vimeo_data'
+  get '/populate' => 'videos#populate'
 
 end

@@ -1,0 +1,3 @@
+david:
+  email: dave@gmail.com
+  encrypted_password: <%= Devise.bcrypt(User, 'password') %>
