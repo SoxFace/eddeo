@@ -7,7 +7,7 @@ RSpec.describe VideosController, type: :controller do
       @video = Video.create(:uri => "31939661", :name => 'An Example Video', :vimeo_id => 511 )
     end
 
-    it "should feature the selected video on the feature page" do
+    it "should display the selected video on the feature page" do
       expect(@video.uri).to eq "31939661"
       expect(@video.name).to eq 'An Example Video'
       expect(@video.vimeo_id).to eq 511
@@ -18,11 +18,6 @@ RSpec.describe VideosController, type: :controller do
     before do
       get :index, :format => :json
     end
-
-    # it 'should respond with a status 200' do
-    #    expect(response).to be_success
-    #    expect(response.status).to eq(200)
-    #  end
 
      it 'should return content type as JSON' do
        expect(response.content_type).to eq('application/json; charset=utf-8')
@@ -52,29 +47,23 @@ RSpec.describe VideosController, type: :controller do
 
   end
 
+  describe "Index" do
+    it 'should only belong for routing purposes' do
+    end
+  end
+
+  describe 'Iterate' do
+    before do
+      @video = Video.create(:uri => "31939661", :name => 'An Example Video', :vimeo_id => 511, :pictures => "15539661", :stats => 465 )
+      end
+
+      it 'should loop through each video and save it to the database using the regex' do
+        expect(@video.uri).to eq("31939661")
+        expect(@video.name).to eq('An Example Video')
+        expect(@video.vimeo_id).to eq(511)
+        expect(@video.pictures).to eq("15539661")
+        expect(@video.stats).to eq(465)
+      end
+  end
 
 end
-
-
-# RSpec.describe Fruit, :type => :model do
-
-#   it { should belong_to :shelf }
-
-#   describe "An apple" do
-#     before do
-#       @apple = Apple.create(:name => 'Granny Smith')
-#     end
-
-#     it 'should not be squishy' do
-#       expect(@apple.squishy?).to eq(false)
-#     end
-
-#     it 'should remember what class it is using Single Table Inheritance (STI)' do
-#       apple = Fruit.find @apple.id
-#       expect(apple).to_not eq(nil) # Existence/persistence
-#       expect(apple.class).to eq(Apple) # Class via STI
-#       expect(apple).to eq(@apple) # Same object
-#       expect(apple.is_a? Fruit).to eq(true) # Inheritance
-#       expect(apple.class.ancestors).to include(Fruit)
-#     end
-#   end
