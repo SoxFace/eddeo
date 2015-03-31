@@ -15,8 +15,6 @@ class VideosController < ApplicationController
     options = { headers: { 'Authorization' => "bearer 53571d3c0442ff00db4564d5435b7ea7" }, page: @current_page }
     json = JSON.parse self.class.get("/me/videos?page=#{@current_page}", options)
     vimeo_data = json['data']
-    # require 'pry'
-    # binding.pry
 
     if vimeo_data || vimeo_data.length >= 1
       iterate( vimeo_data )
@@ -37,11 +35,11 @@ class VideosController < ApplicationController
   end
 
   def index
-    if params[:search]
-      @videos = Video.search(params[:search]).order("name ASC")
-    else
-      @videos = Video.all.order('name ASC')
-    end
+    # if params[:search]
+    #   @videos = Video.search(params[:search]).order("name ASC")
+    # else
+    #   @videos = Video.all.order('name ASC')
+    # end
   end
   
   private

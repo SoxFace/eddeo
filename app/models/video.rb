@@ -21,9 +21,9 @@ class Video < ActiveRecord::Base
 
   validates :vimeo_id, uniqueness: true
 
-  def self.search(query)
-    where("video ilike ?", "%#{query}%") 
-  end
+  # def self.search(query)
+  #   where("video ilike ?", "%#{query}%") 
+  # end
 
   def viewer_ids
     self.views.map(&:user_id)
