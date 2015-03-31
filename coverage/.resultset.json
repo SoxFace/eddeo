@@ -882,20 +882,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "/Users/sonyacorcoran/Projects/eddeo/app/controllers/views_controller.rb": [
@@ -1081,11 +1067,11 @@
         null,
         1,
         null,
+        1,
         null,
-        null,
-        null,
-        null,
-        null,
+        2,
+        2,
+        2,
         null,
         null,
         null,
@@ -1182,6 +1168,6 @@
         null
       ]
     },
-    "timestamp": 1427782861
+    "timestamp": 1427788114
   }
 }
