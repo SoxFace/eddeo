@@ -11,13 +11,13 @@
 <body>
     <header>
       <div class="row">
-        <div class="two-thirds column alpha">
+        <div class="two-thirds column">
           <% if user_signed_in? %>
           Medical Radiation Sciences | Postioning Videos<br>
           If it's gray, you've seen it before
         </div>
         
-          <div class="one-third column omega">
+          <div class="one-third column">
               Nice work, you have watched <strong><%= current_user.views.count %> of 113</strong> videos available.<br>
               <%= current_user.email %>
               <strong><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></strong>

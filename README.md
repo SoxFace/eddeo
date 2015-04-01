@@ -1,10 +1,19 @@
 # eddeo
-EDucational viDEOs for Project III of WDI General Assembly
+## EDucational viDEOs for Project III of WDI General Assembly 2015
 
-* Ruby 2.2.0p0
+System dependencies
+------ 
+Ruby 2.2.0p0
+Postgres
 
-* System dependencies
-**** Postgres
+| Gems          | JS Libraries  | Testing          |
+| ------------- |:-------------:| ----------------:|
+| skeleton      | fancybox      | RSpec            |
+| httparty      | medium        | simplecov        |
+| devise        |               | shoulda-matchers |
+| sweetalerts   |               | capybara         |
+| fancybox      |               |                  |
+| medium editor |               |                  |
 
 * Configuration
 
