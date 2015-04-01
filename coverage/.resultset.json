@@ -868,40 +868,6 @@
         null,
         null
       ],
-      "/Users/sonyacorcoran/Projects/eddeo/spec/helpers/categories_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/Users/sonyacorcoran/Projects/eddeo/spec/helpers/users_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
       "/Users/sonyacorcoran/Projects/eddeo/spec/helpers/videos_helper_spec.rb": [
         1,
         null,
@@ -924,23 +890,6 @@
         null,
         null,
         null,
-        null
-      ],
-      "/Users/sonyacorcoran/Projects/eddeo/spec/helpers/views_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
         null
       ],
       "/Users/sonyacorcoran/Projects/eddeo/spec/models/video_spec.rb": [
@@ -1004,27 +953,6 @@
         null,
         null
       ],
-      "/Users/sonyacorcoran/Projects/eddeo/spec/views/views/create.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/Users/sonyacorcoran/Projects/eddeo/spec/views/views/index.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/Users/sonyacorcoran/Projects/eddeo/spec/views/views/new.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
       "/Users/sonyacorcoran/Projects/eddeo/app/models/view.rb": [
         null,
         null,
@@ -1043,6 +971,6 @@
         null
       ]
     },
-    "timestamp": 1427925987
+    "timestamp": 1427926600
   }
 }

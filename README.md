@@ -1,5 +1,5 @@
 # eddeo
-**An ED**ucational vi**DEO** wall for Project III of WDI General Assembly 2015
+An **ED**ucational vi**DEO** wall for Project III of WDI General Assembly 2015
 
 System dependencies
 ------ 
