@@ -1,10 +1,10 @@
 # eddeo
-## EDucational viDEOs for Project III of WDI General Assembly 2015
+EDucational viDEOs for Project III of WDI General Assembly 2015
 
 System dependencies
 ------ 
-Ruby 2.2.0p0
-Postgres
+###### Ruby 2.2.0p0
+###### Postgres
 
 | Gems          | JS Libraries  | Testing          |
 | ------------- |:-------------:| ----------------:|
@@ -15,23 +15,26 @@ Postgres
 | fancybox      |               |                  |
 | medium editor |               |                  |
 
-* Configuration
+Configuration
+------ 
 
-* Database creation
+Database creation
+------ 
+###### bundle
+###### rake db:migrate
+###### annotate
 
-* Database initialization
+How to run the test suite
+------ 
+###### rspec
+###### open coverage/index.html
 
-* How to run the test suite
-*** Rspec
-*** SimpleCov
+Acknowledgements
+------
+This project could not have been made possible without the support, hardwork and talent of these wonderful people:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-
++ Phil Goody - University of Sydney
++ Mark McEntee - University of Sydney
++ Joel Turnbull - General Assembly 
++ Jack Jefferies - General Assembly
++ James Gregory - ThoughtWorks
