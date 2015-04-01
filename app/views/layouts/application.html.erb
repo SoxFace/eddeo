@@ -9,39 +9,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <body>
+    <header>
+      <div class="row">
+        <div class="two-thirds column alpha">
+          <% if user_signed_in? %>
+          Medical Radiation Sciences | Postioning Videos<br>
+          If it's gray, you've seen it before
+        </div>
+        
+          <div class="one-third column omega">
+              Nice work, you have watched <strong><%= current_user.views.count %> of 113</strong> videos available.<br>
+              <%= current_user.email %>
+              <strong><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></strong>
+            <% else %>
+              <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+              <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+            <% end %>
 
-  <header>
-  Medical Radiation Sciences | Postioning Videos<br>
-  If it's gray, you've seen it before
+            <!-- DEVISE FLASH MESSAGES -->
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
+          </div>
+        </div>
+    </header>
 
-  </header>
+      <%= yield %>
 
-    <div class="devise_header">
-      <% if user_signed_in? %>
-        Nice work, you have watched <strong><%= current_user.views.count %> of 113</strong> videos available.<br>
-        <%= current_user.email %>
-        <strong><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></strong>
-      <% else %>
-        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-        <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-      <% end %>
-
-    <!-- DEVISE FLASH MESSAGES -->
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    </div>
-
-          <%= yield %>
-
-  <footer>
-    <hr>
-    Faculty of Health Sciences<br>University of Sydney<br>&copy; 2015
-  </footer>
-  <style>
-    html body div#fancybox-loading {
-      display: none !important;
-    }
-  </style>
+    <footer>
+      Faculty of Health Sciences<br>University of Sydney<br>&copy; 2015
+    </footer>
+    <!-- REMOVES FANCYBOX LOADING GIF FROM ALL PAGES -->
+      <style>
+        html body div#fancybox-loading {
+          display: none !important;
+        }
+      </style>
 </body>
 </html>

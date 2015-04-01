@@ -2,29 +2,32 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.devise_header {
+.one-third.column {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  font-size: 1em;
+  top: 1%;
+  right: 1%;
   text-align: right;
   z-index: 1;
 }
 
 header {
   position: absolute;
-  top: 20px;
-  left: 30px;
+  width: 100%;
+  top: 1%;
+  left: 1%;
+  font-size: 1em;
   text-align: left;
-  /*font-weight: 2em;*/
   z-index: 1;
 }
 
 footer {
   position: fixed;
-  width: 100px;
+  width: 100%;
   display: inline-block;
-  right: 30px;
+  right: 1%;
   bottom: 10px;
+  font-size: 1em;
   text-align: right;
   z-index: 1;
 }
