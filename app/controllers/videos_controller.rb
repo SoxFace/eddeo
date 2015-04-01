@@ -49,7 +49,7 @@ class VideosController < ApplicationController
 
         Video.find_or_create_by( :uri => uri, :name => name, :vimeo_id => vimeo_id, :pictures => pictures, :stats => stats )
       rescue 
-        binding.pry
+        redirect_to root_path
       end
     end
 

@@ -14,15 +14,16 @@
 #  updated_at  :datetime         not null
 #
 
-class Video < ActiveRecord::Base
-  has_and_belongs_to_many :users
-  has_and_belongs_to_many :categories
-  has_many :views
+require 'rails_helper'
 
-  validates :vimeo_id, uniqueness: true
+RSpec.describe Video, type: :model do
 
-  def viewer_ids
-    self.views.map(&:user_id)
-  end
+  # describe Video do
+
+  #   it 'should map the user id to the views model' do
+  #     expect(@viewer_ids).to eq nil
+  #   end
+
+  # end
 
 end

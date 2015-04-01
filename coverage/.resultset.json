@@ -763,6 +763,7 @@
         null,
         null,
         null,
+        null,
         1,
         1,
         1,
@@ -916,13 +917,7 @@
         null,
         1,
         null,
-        null,
-        null,
         1,
-        null,
-        null,
-        null,
-        null,
         null,
         1,
         1,
@@ -948,25 +943,35 @@
         1,
         null
       ],
-      "/Users/sonyacorcoran/Projects/eddeo/spec/views/views/create.html.erb_spec.rb": [
+      "/Users/sonyacorcoran/Projects/eddeo/spec/models/video_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         null,
         1,
-        1,
-        null
-      ],
-      "/Users/sonyacorcoran/Projects/eddeo/spec/views/views/index.html.erb_spec.rb": [
-        1,
         null,
-        1,
-        1,
-        null
-      ],
-      "/Users/sonyacorcoran/Projects/eddeo/spec/views/views/new.html.erb_spec.rb": [
-        1,
         null,
-        1,
-        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/sonyacorcoran/Projects/eddeo/app/models/video.rb": [
@@ -993,14 +998,31 @@
         null,
         1,
         null,
-        null,
-        null,
-        null,
-        null,
         1,
         0,
         null,
         null,
+        null
+      ],
+      "/Users/sonyacorcoran/Projects/eddeo/spec/views/views/create.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/sonyacorcoran/Projects/eddeo/spec/views/views/index.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/sonyacorcoran/Projects/eddeo/spec/views/views/new.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
         null
       ],
       "/Users/sonyacorcoran/Projects/eddeo/app/models/view.rb": [
@@ -1021,6 +1043,6 @@
         null
       ]
     },
-    "timestamp": 1427844109
+    "timestamp": 1427847028
   }
 }

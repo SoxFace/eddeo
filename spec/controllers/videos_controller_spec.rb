@@ -36,6 +36,7 @@ RSpec.describe VideosController, type: :controller do
        videos = JSON.parse(response.body).to_a
        expect(videos.length).to eq Video.count
      end
+
   end
 
   describe "Index" do
