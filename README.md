@@ -1,5 +1,5 @@
 # eddeo
-EDucational viDEOs for Project III of WDI General Assembly 2015
+**An ED**ucational vi**DEO** wall for Project III of WDI General Assembly 2015
 
 System dependencies
 ------ 
@@ -14,9 +14,6 @@ System dependencies
 | sweetalerts   |               | capybara         |
 | fancybox      |               |                  |
 | medium editor |               |                  |
-
-Configuration
------- 
 
 Database creation
 ------ 
