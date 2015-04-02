@@ -33,5 +33,5 @@ This project could not have been made possible without the support, hardwork and
 + Phil Goody - University of Sydney
 + Mark McEntee - University of Sydney
 + Joel Turnbull - General Assembly 
-+ Jack Jefferies - General Assembly
++ Jack Jeffress - General Assembly
 + James Gregory - ThoughtWorks
